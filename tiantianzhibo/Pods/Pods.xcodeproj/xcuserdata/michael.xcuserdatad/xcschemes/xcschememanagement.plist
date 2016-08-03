@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GDLiveStreaming.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GPUImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-tiantianzhibo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UriParser-cpp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VideoCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>03697241D3C7F39A88EFF77FE42673E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>087DDEDBB2F37C441C01CD2AB9BD15A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E30364A6CC16E109838FA2918057FE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C7F11544EEC6F4FAFB0F00E49792704</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A84D676CA918B1844B7963CBC4A93428</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
