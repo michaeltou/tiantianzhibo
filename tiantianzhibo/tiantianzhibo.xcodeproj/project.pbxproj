@@ -28,6 +28,14 @@
 		4C9FA2BB1D51AD2500F4FB38 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9FA2BA1D51AD2500F4FB38 /* QuartzCore.framework */; };
 		4C9FA2BD1D51AD2F00F4FB38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9FA2BC1D51AD2F00F4FB38 /* UIKit.framework */; };
 		4C9FA2BF1D51AD3800F4FB38 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9FA2BE1D51AD3800F4FB38 /* VideoToolbox.framework */; };
+		4C9FA2C31D5354FE00F4FB38 /* GiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA2C11D5354FE00F4FB38 /* GiftViewController.m */; };
+		4C9FA2C41D5354FE00F4FB38 /* GiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FA2C21D5354FE00F4FB38 /* GiftViewController.xib */; };
+		4C9FA2C81D5355EA00F4FB38 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA2C61D5355EA00F4FB38 /* ChatViewController.m */; };
+		4C9FA2C91D5355EA00F4FB38 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FA2C71D5355EA00F4FB38 /* ChatViewController.xib */; };
+		4C9FA2CE1D53579B00F4FB38 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA2CD1D53579B00F4FB38 /* ChatModel.m */; };
+		4C9FA2D11D5357FE00F4FB38 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA2D01D5357FE00F4FB38 /* ChatTableViewCell.m */; };
+		4C9FA2D41D53698300F4FB38 /* BigHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA2D31D53698300F4FB38 /* BigHallViewController.m */; };
+		4C9FA2D61D536AEF00F4FB38 /* mybigimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FA2D51D536AEF00F4FB38 /* mybigimage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +63,19 @@
 		4C9FA2BA1D51AD2500F4FB38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4C9FA2BC1D51AD2F00F4FB38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C9FA2BE1D51AD3800F4FB38 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		4C9FA2C01D5354FE00F4FB38 /* GiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftViewController.h; sourceTree = "<group>"; };
+		4C9FA2C11D5354FE00F4FB38 /* GiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftViewController.m; sourceTree = "<group>"; };
+		4C9FA2C21D5354FE00F4FB38 /* GiftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewController.xib; sourceTree = "<group>"; };
+		4C9FA2C51D5355EA00F4FB38 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		4C9FA2C61D5355EA00F4FB38 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		4C9FA2C71D5355EA00F4FB38 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		4C9FA2CC1D53579B00F4FB38 /* ChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
+		4C9FA2CD1D53579B00F4FB38 /* ChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
+		4C9FA2CF1D5357FE00F4FB38 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		4C9FA2D01D5357FE00F4FB38 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		4C9FA2D21D53698300F4FB38 /* BigHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigHallViewController.h; sourceTree = "<group>"; };
+		4C9FA2D31D53698300F4FB38 /* BigHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigHallViewController.m; sourceTree = "<group>"; };
+		4C9FA2D51D536AEF00F4FB38 /* mybigimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mybigimage.png; path = ../../../../Desktop/mybigimage.png; sourceTree = "<group>"; };
 		6BDA2C253ECBCB618DBAA218 /* Pods-tiantianzhibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiantianzhibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-tiantianzhibo/Pods-tiantianzhibo.release.xcconfig"; sourceTree = "<group>"; };
 		B172D9EEF2619272EBB792AD /* Pods-tiantianzhibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiantianzhibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tiantianzhibo/Pods-tiantianzhibo.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF8AE280A76011C3D16DD7E /* libPods-tiantianzhibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tiantianzhibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +159,14 @@
 		4C68DF4E1D4E354F0009695C /* tiantianzhibo */ = {
 			isa = PBXGroup;
 			children = (
+				4C9FA2CF1D5357FE00F4FB38 /* ChatTableViewCell.h */,
+				4C9FA2D01D5357FE00F4FB38 /* ChatTableViewCell.m */,
+				4C9FA2C51D5355EA00F4FB38 /* ChatViewController.h */,
+				4C9FA2C61D5355EA00F4FB38 /* ChatViewController.m */,
+				4C9FA2C71D5355EA00F4FB38 /* ChatViewController.xib */,
+				4C9FA2C01D5354FE00F4FB38 /* GiftViewController.h */,
+				4C9FA2C11D5354FE00F4FB38 /* GiftViewController.m */,
+				4C9FA2C21D5354FE00F4FB38 /* GiftViewController.xib */,
 				4C68DF521D4E354F0009695C /* AppDelegate.h */,
 				4C68DF531D4E354F0009695C /* AppDelegate.m */,
 				4C68DF551D4E354F0009695C /* ViewController.h */,
@@ -147,6 +176,10 @@
 				4C68DF5D1D4E354F0009695C /* LaunchScreen.storyboard */,
 				4C68DF601D4E354F0009695C /* Info.plist */,
 				4C68DF4F1D4E354F0009695C /* Supporting Files */,
+				4C9FA2CC1D53579B00F4FB38 /* ChatModel.h */,
+				4C9FA2CD1D53579B00F4FB38 /* ChatModel.m */,
+				4C9FA2D21D53698300F4FB38 /* BigHallViewController.h */,
+				4C9FA2D31D53698300F4FB38 /* BigHallViewController.m */,
 			);
 			path = tiantianzhibo;
 			sourceTree = "<group>";
@@ -154,6 +187,7 @@
 		4C68DF4F1D4E354F0009695C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C9FA2D51D536AEF00F4FB38 /* mybigimage.png */,
 				4C68DF501D4E354F0009695C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -219,8 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9FA2C41D5354FE00F4FB38 /* GiftViewController.xib in Resources */,
 				4C68DF5F1D4E354F0009695C /* LaunchScreen.storyboard in Resources */,
 				4C68DF5C1D4E354F0009695C /* Assets.xcassets in Resources */,
+				4C9FA2C91D5355EA00F4FB38 /* ChatViewController.xib in Resources */,
+				4C9FA2D61D536AEF00F4FB38 /* mybigimage.png in Resources */,
 				4C68DF5A1D4E354F0009695C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9FA2C31D5354FE00F4FB38 /* GiftViewController.m in Sources */,
 				4C68DF571D4E354F0009695C /* ViewController.m in Sources */,
+				4C9FA2C81D5355EA00F4FB38 /* ChatViewController.m in Sources */,
+				4C9FA2D11D5357FE00F4FB38 /* ChatTableViewCell.m in Sources */,
+				4C9FA2D41D53698300F4FB38 /* BigHallViewController.m in Sources */,
+				4C9FA2CE1D53579B00F4FB38 /* ChatModel.m in Sources */,
 				4C68DF541D4E354F0009695C /* AppDelegate.m in Sources */,
 				4C68DF511D4E354F0009695C /* main.m in Sources */,
 			);

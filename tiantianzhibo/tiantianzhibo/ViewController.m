@@ -27,6 +27,7 @@
 #import <IJKMediaFramework/IJKMediaFramework.h>
 
 
+#import "GiftViewController.h"
 
 
 @interface ViewController ()
@@ -52,7 +53,7 @@ GPUImageVideoCamera *_videoCamera;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self startPlay];
+     // [self startPlay];
 }
 
 
@@ -61,7 +62,7 @@ GPUImageVideoCamera *_videoCamera;
     
     //  [self startCapture];
     
-    [self startPlay];
+  //  [self startPlay];
     
 }
 
