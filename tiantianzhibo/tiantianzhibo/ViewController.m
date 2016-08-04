@@ -72,22 +72,11 @@ GPUImageVideoCamera *_videoCamera;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
-     // [self startPlay];
-    
-    /** 加载网络视频 **/
-    // [self initVideo];
-    
-    
-    UIView *tempOverlapView = [[UIView alloc] initWithFrame:CGRectMake(0,self.view.bounds.size.height-480, self.view.bounds.size.width, 480)];
-    self.overlapView = tempOverlapView;
-    self.overlapView.backgroundColor = [UIColor lightGrayColor];
-    
-    //  _overlapView.backgroundColor = [UIColor clearColor];
-    
-    //  [overlapView setCenter: self.view.center];
-    
-    [self.view addSubview:self.overlapView];
+      [self startPlay];
+    [self initPageInterface];
+
     
     /* 增加操作按钮 */
     [self addActionButton];
@@ -96,8 +85,11 @@ GPUImageVideoCamera *_videoCamera;
     
     //  [self initTabGesture];
     
+    /*  初始化手势 左右滑动 清理界面 */
     [self initSwipGesture];
     
+   
+
     
     // [self startTimer];
     
@@ -121,6 +113,20 @@ GPUImageVideoCamera *_videoCamera;
     }
 }
 
+-(void) initPageInterface{
+    
+    
+    UIView *tempOverlapView = [[UIView alloc] initWithFrame:CGRectMake(0,self.view.bounds.size.height-480, self.view.bounds.size.width, 480)];
+    self.overlapView = tempOverlapView;
+    self.overlapView.backgroundColor = [UIColor lightGrayColor];
+    
+    _overlapView.backgroundColor = [UIColor clearColor];
+    
+    //  [overlapView setCenter: self.view.center];
+    
+    [self.view addSubview:self.overlapView];
+    
+}
 
 /** 加载网络视频,并增加到主视图上去  **/
 -(void)startPlay{
@@ -154,6 +160,10 @@ GPUImageVideoCamera *_videoCamera;
     
     /**  put PlayerView into current view  **/
     [self.view addSubview:self.PlayerView];
+    
+
+   
+    
     
     
     /* 下面这段代码用于控制播放器的播放、暂停

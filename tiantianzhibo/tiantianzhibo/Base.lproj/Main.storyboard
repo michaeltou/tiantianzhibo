@@ -87,7 +87,7 @@
                         <barButtonItem key="leftBarButtonItem" title="搜索" id="JFk-Vp-DKq"/>
                         <barButtonItem key="rightBarButtonItem" title="直播" id="IH2-vO-dl7">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="showDetail" id="x7c-TR-2qK"/>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="09M-nj-Kuo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805" y="349"/>
+            <point key="canvasLocation" x="1719" y="-729"/>
         </scene>
         <!--BigHall-->
         <scene sceneID="qhC-sj-2IG">
