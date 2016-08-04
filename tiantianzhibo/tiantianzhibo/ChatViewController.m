@@ -17,6 +17,7 @@
 @property (strong,nonatomic) NSMutableArray *chatTableData;  //tableView数据存放数组
 
 
+
 @end
 
 @implementation ChatViewController

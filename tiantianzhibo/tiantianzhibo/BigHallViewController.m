@@ -113,8 +113,8 @@
     //设置视图的横坐标，一幅图为320*460，横坐标一次增加或减少320像素
     rect.origin.x = segmentControl.selectedSegmentIndex * self.myScrollView.frame.size.width;
     //设置视图纵坐标为0
-    // rect.origin.y = 0;
-    rect.origin.y = _myScrollView.contentOffset.y;
+     rect.origin.y = 0;
+    //rect.origin.y = _myScrollView.contentOffset.y;
     
     //scrollView可视区域
     [self.myScrollView scrollRectToVisible:rect animated:YES];
