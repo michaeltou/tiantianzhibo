@@ -8,15 +8,43 @@
 
 #import "BigHallViewController.h"
 
-@interface BigHallViewController ()
+ #import "PlayerTableViewCell.h"
+#import "ODRefreshControl.h"
+#import "NetWorkEngine.h"
+#import "PlayerModel.h"
 
-@property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
+
+#define Ratio 618/480
+
+// 映客接口
+#define MainData [NSString stringWithFormat:@"http://service.ingkee.com/api/live/gettop?imsi=&uid=17800399&proto=5&idfa=A1205EB8-0C9A-4131-A2A2-27B9A1E06622&lc=0000000000000026&cc=TG0001&imei=&sid=20i0a3GAvc8ykfClKMAen8WNeIBKrUwgdG9whVJ0ljXi1Af8hQci3&cv=IK3.1.00_Iphone&devi=bcb94097c7a3f3314be284c8a5be2aaeae66d6ab&conn=Wifi&ua=iPhone&idfv=DEBAD23B-7C6A-4251-B8AF-A95910B778B7&osversion=ios_9.300000&count=5&multiaddr=1"]
+
+
+
+@interface BigHallViewController ()<UITableViewDelegate,UITableViewDataSource>
+
 
 @property (weak, nonatomic) IBOutlet UINavigationItem *myNavigationItem;
+
+
+@property (nonatomic, strong)UITableView * tableView;
+@property (nonatomic, strong)NSMutableArray * dataArray;
+
+
 
 @end
 
 @implementation BigHallViewController
+
+
+
+- (NSMutableArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,53 +52,102 @@
     
     NSLog(@"DaTing view is loaeded");
     
-    
-    // 1.创建UIScrollView
-    /* UIScrollView *scrollView = [[UIScrollView alloc] init];
-     scrollView.frame = CGRectMake(0, 0, 250, 250); // frame中的size指UIScrollView的可视范围
-     scrollView.backgroundColor = [UIColor grayColor];
-     [self.view addSubview:scrollView];
-     
-     */
-    
-    UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.image = [UIImage imageNamed:@"mybigimage"];
-    CGFloat imgW = imageView.image.size.width; // 图片的宽度
-    CGFloat imgH = imageView.image.size.height; // 图片的高度
-    imageView.frame = CGRectMake(0, 0, imgW, imgH);
-    [_myScrollView addSubview:imageView];
-    
-    // 3.设置scrollView的属性
-    
-    // 设置UIScrollView的滚动范围（内容大小）
-    _myScrollView.contentSize = imageView.image.size;
-    
-    //分页滑动
-    _myScrollView.pagingEnabled = TRUE;
-    //滚动方向锁定
-    _myScrollView.directionalLockEnabled = TRUE;
-    _myScrollView.alwaysBounceVertical = NO;
-    _myScrollView.alwaysBounceHorizontal = NO;
-    _myScrollView.bounces =FALSE;
-    // 隐藏水平滚动条
-    _myScrollView.showsHorizontalScrollIndicator = NO;
-    _myScrollView.showsVerticalScrollIndicator = NO;
+    [self setupTableView];
+
+    // 添加下拉刷新
+ //   [self addRefresh];
     
     
+    // 加载数据
+    [self loadData];
+    
+}
+
+
+#pragma mark ---- <加载数据>
+- (void)loadData {
+    [self.dataArray removeAllObjects];
+    __weak __typeof(self)vc = self;
+    NetWorkEngine * netWork = [[NetWorkEngine alloc] init];
+    [netWork AfJSONGetRequest:MainData];
+    netWork.successfulBlock = ^(id object){
+        NSArray *listArray = [object objectForKey:@"lives"];
+        
+        for (NSDictionary *dic in listArray) {
+            
+            PlayerModel *playerModel = [[PlayerModel alloc] initWithDictionary:dic];
+            playerModel.city = dic[@"city"];
+            playerModel.portrait = dic[@"creator"][@"portrait"];
+            playerModel.name = dic[@"creator"][@"nick"];
+            playerModel.online_users = [dic[@"online_users"] intValue];
+            playerModel.url = dic[@"stream_addr"];
+            [vc.dataArray addObject:playerModel];
+            
+        }
+        [self.tableView reloadData];
+    };
+}
+
+
+
+#pragma mark ---- <setupTableView>
+- (void)setupTableView {
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.rowHeight = [UIScreen mainScreen].bounds.size.width * Ratio + 1;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.view addSubview:_tableView];
     
     
-    // 用来记录scrollview滚动的位置
-    //    scrollView.contentOffset = ;
+}
+
+#pragma mark ---- <数据源方法>
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString * cellIdentifier = @"cell";
+    PlayerTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    // 去掉弹簧效果
-    //    scrollView.bounces = NO;
+    if (cell==nil) {
+        
+        cell = [[PlayerTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
     
-    // 增加额外的滚动区域（逆时针，上、左、下、右）
-    // top  left  bottom  right
-    // _myScrollView.contentInset = UIEdgeInsetsMake(20, 20, 20, 20);
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    PlayerModel * playerModel = [self.dataArray objectAtIndex:indexPath.row];
+    cell.playerModel = playerModel;
+    
+    return cell;
     
     
+}
+
+/*
+#pragma mark ---- <点击跳转直播>
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PlayerViewController * playerVc = [[PlayerViewController alloc] init];
+    PlayerModel * PlayerModel = self.dataArray[indexPath.row];
+    // 直播url
+    playerVc.liveUrl = PlayerModel.url;
+    // 直播图片
+    playerVc.imageUrl = PlayerModel.portrait;
+    [self.navigationController pushViewController:playerVc animated:true];
     
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+}
+*/
+ 
+/*
+
+-(void)initSegment{
     NSArray *array=@[@"关注",@"推荐",@"所有"];
     UISegmentedControl *segmentControl=[[UISegmentedControl alloc]initWithItems:array];
     // segmentControl.segmentedControlStyle=UISegmentedControlStyleBezeled;
@@ -98,11 +175,9 @@
     self.myNavigationItem.titleView = segmentControl;//添加到导航栏
     
     
-    
 }
-
-
-
+*/
+/*
 
 -(void)change:(UISegmentedControl *)segmentControl{
     NSLog(@"segmentControl %d",segmentControl.selectedSegmentIndex);
@@ -120,7 +195,7 @@
     [self.myScrollView scrollRectToVisible:rect animated:YES];
     
     
-}
+} */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

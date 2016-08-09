@@ -73,14 +73,6 @@
                     <view key="view" contentMode="scaleToFill" id="5Xz-9p-Zlw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jar-XA-0jj">
-                                <rect key="frame" x="44" y="116" width="475" height="376"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="32" y="140" width="337" height="215"/>
-                                </variation>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CIe-mj-00Z">
@@ -93,7 +85,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myNavigationItem" destination="CIe-mj-00Z" id="PnD-eU-nlQ"/>
-                        <outlet property="myScrollView" destination="Jar-XA-0jj" id="6HI-JB-ZPs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPi-pU-VGm" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BigHallViewController : UIViewController
-
+@interface BigHallViewController : UIViewController 
 @end
