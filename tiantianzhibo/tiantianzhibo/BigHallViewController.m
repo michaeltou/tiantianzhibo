@@ -55,7 +55,7 @@
     [self setupTableView];
 
     // 添加下拉刷新
- //   [self addRefresh];
+    [self addRefresh];
     
     
     // 加载数据
@@ -88,6 +88,25 @@
     };
 }
 
+
+#pragma mark ---- <添加下拉刷新>
+- (void)addRefresh {
+    
+    ODRefreshControl *refreshController = [[ODRefreshControl alloc] initInScrollView:self.tableView];
+    [refreshController addTarget:self action:@selector(dropViewDidBeginRefreshing:) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)dropViewDidBeginRefreshing:(ODRefreshControl *)refreshController {
+    NSLog(@"refreshing");
+    double delayInSecinds = 1.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSecinds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^{
+        NSLog(@"begin refresh");
+        [refreshController endRefreshing];
+        [self loadData];
+        NSLog(@"end refresh");
+    });
+}
 
 
 #pragma mark ---- <setupTableView>
