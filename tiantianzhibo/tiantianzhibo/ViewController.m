@@ -74,23 +74,23 @@ GPUImageVideoCamera *_videoCamera;
     [super viewDidLoad];
     
     // Do any additional setup after loading the view, typically from a nib.
-      [self startPlay];
+    //  [self startPlay];
     [self initPageInterface];
 
     
     /* 增加操作按钮 */
-    [self addActionButton];
+   // [self addActionButton];
     
-    [self loadChatViewFromXIB];
+   // [self loadChatViewFromXIB];
     
     //  [self initTabGesture];
     
     /*  初始化手势 左右滑动 清理界面 */
-    [self initSwipGesture];
+   // [self initSwipGesture];
     
    
 
-    
+    [self startCapture];
     // [self startTimer];
     
     
@@ -215,16 +215,16 @@ GPUImageVideoCamera *_videoCamera;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void) {
         _videoCamera.audioEncodingTarget = movieWriter;
-        //  [movieWriter startRecording];
+          [movieWriter startRecording];
         //   [rtmpOutput startUploadStreamWithURL:@"rtmp://a.rtmp.youtube.com/live2" andStreamKey:@"323c-p07x-2g2e-c57k"];
         
-        [rtmpOutput startUploadStreamWithURL:@"rtmp://192.168.0.108:1935/live1" andStreamKey:@"test2"];
+        [rtmpOutput startUploadStreamWithURL:@"rtmp://192.168.0.102:1935/live1" andStreamKey:@"test2"];
         
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 120.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void) {
             [_videoCamera removeTarget:movieWriter];
             _videoCamera.audioEncodingTarget = nil;
-            //     [movieWriter finishRecording];
+                 [movieWriter finishRecording];
             NSLog(@"Movie completed");
             
             ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];

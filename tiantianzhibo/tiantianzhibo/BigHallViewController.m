@@ -13,6 +13,8 @@
 #import "NetWorkEngine.h"
 #import "PlayerModel.h"
 
+#import "PlayerViewController.h"
+
 
 #define Ratio 618/480
 
@@ -98,7 +100,7 @@
 
 - (void)dropViewDidBeginRefreshing:(ODRefreshControl *)refreshController {
     NSLog(@"refreshing");
-    double delayInSecinds = 1.0;
+    double delayInSecinds = 3.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSecinds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^{
         NSLog(@"begin refresh");
@@ -147,7 +149,7 @@
     
 }
 
-/*
+
 #pragma mark ---- <点击跳转直播>
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -157,78 +159,22 @@
     playerVc.liveUrl = PlayerModel.url;
     // 直播图片
     playerVc.imageUrl = PlayerModel.portrait;
+    
+    NSLog(PlayerModel.url);
     [self.navigationController pushViewController:playerVc animated:true];
     
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
 }
-*/
+
  
-/*
 
--(void)initSegment{
-    NSArray *array=@[@"关注",@"推荐",@"所有"];
-    UISegmentedControl *segmentControl=[[UISegmentedControl alloc]initWithItems:array];
-    // segmentControl.segmentedControlStyle=UISegmentedControlStyleBezeled;
-    //设置位置 大小
-    segmentControl.frame=CGRectMake(60, 100, 200, 40);
-    //默认选择
-    segmentControl.selectedSegmentIndex=1;
-    //设置背景色
-    segmentControl.tintColor=[UIColor greenColor];
-    //设置监听事件
-    [segmentControl addTarget:self action:@selector(change:) forControlEvents:UIControlEventValueChanged];
-    // [self.view addSubview:segmentControl];
-    
-    
-    
-    segmentControl.tintColor = [UIColor clearColor];//去掉颜色,现在整个segment都看不见
-    NSDictionary* selectedTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:16],
-                                             NSForegroundColorAttributeName: [UIColor greenColor]};
-    [segmentControl setTitleTextAttributes:selectedTextAttributes forState:UIControlStateSelected];//设置文字属性
-    NSDictionary* unselectedTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:16],
-                                               NSForegroundColorAttributeName: [UIColor redColor]};
-    [segmentControl setTitleTextAttributes:unselectedTextAttributes forState:UIControlStateNormal];
-    
-    
-    self.myNavigationItem.titleView = segmentControl;//添加到导航栏
-    
-    
-}
-*/
-/*
-
--(void)change:(UISegmentedControl *)segmentControl{
-    NSLog(@"segmentControl %d",segmentControl.selectedSegmentIndex);
-    
-    
-    //获取当前视图的页码
-    CGRect rect = self.myScrollView.frame;
-    //设置视图的横坐标，一幅图为320*460，横坐标一次增加或减少320像素
-    rect.origin.x = segmentControl.selectedSegmentIndex * self.myScrollView.frame.size.width;
-    //设置视图纵坐标为0
-     rect.origin.y = 0;
-    //rect.origin.y = _myScrollView.contentOffset.y;
-    
-    //scrollView可视区域
-    [self.myScrollView scrollRectToVisible:rect animated:YES];
-    
-    
-} */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

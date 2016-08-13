@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "MainTabBarController.h"
+#import "BigHallViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+   
+     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    // 默认一个窗口的层级都是UIWindowLevelNormal
+    
+    // 设置窗口根控制器为广告控制器
+    MainTabBarController *tabBarVC = [[MainTabBarController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVC;
+    self.window.rootViewController = tabBarVC;
+
+    /*
+    
+    BigHallViewController *bigHallVC = [[BigHallViewController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = bigHallVC;
+    
+    
+     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:bigHallVC];
+
+    self.window.rootViewController = nav;
+
+    */
+    
+    [self.window makeKeyAndVisible];
+ 
     return YES;
 }
 
