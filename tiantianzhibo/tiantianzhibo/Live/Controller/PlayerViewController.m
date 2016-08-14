@@ -13,6 +13,8 @@
 #import "DMHeartFlyView.h"
 #import <Accelerate/Accelerate.h>
 
+#import "WatchSelectOfferViewController.h"
+
 #define XJScreenH [UIScreen mainScreen].bounds.size.height
 #define XJScreenW [UIScreen mainScreen].bounds.size.width
 @interface PlayerViewController ()
@@ -32,6 +34,9 @@
 @property (nonatomic, strong) NSArray *fireworksArray;
 
 @property (nonatomic, weak) CALayer *fireworksL;
+
+@property (weak, nonatomic) UIView *mySelectOfferView;
+
 
 @end
 
@@ -129,6 +134,36 @@
     giftBtn.layer.shadowOpacity = 0.5;
     giftBtn.layer.shadowRadius = 1;
     [self.view addSubview:giftBtn];
+    
+    
+    //购买商品
+    UIButton *buyOfferBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    buyOfferBtn.frame = CGRectMake(XJScreenW - 100, XJScreenH - 36 - 10, 36, 36);
+    [buyOfferBtn setImage:[UIImage imageNamed:@"gift"] forState:UIControlStateNormal];
+    [buyOfferBtn addTarget:self action:@selector(showBuyOffer) forControlEvents:UIControlEventTouchUpInside];
+    buyOfferBtn.layer.shadowColor = [UIColor blackColor].CGColor;
+    buyOfferBtn.layer.shadowOffset = CGSizeMake(0, 0);
+    buyOfferBtn.layer.shadowOpacity = 0.5;
+    buyOfferBtn.layer.shadowRadius = 1;
+    [self.view addSubview:buyOfferBtn];
+    
+    
+}
+
+-(void)showBuyOffer{
+    NSLog(@"SHOW BUY OFFER");
+    WatchSelectOfferViewController  *offerVc = [[WatchSelectOfferViewController alloc] init];
+   // [self presentViewController:offerVc animated:YES completion:nil];
+    
+    //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
+    [self addChildViewController:offerVc];
+
+    
+   _mySelectOfferView =   [offerVc view];
+    _mySelectOfferView.frame = CGRectMake(0,XJScreenH-500, XJScreenW, 300);
+    //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
+    [self.view addSubview:_mySelectOfferView];
+    
     
     
 }

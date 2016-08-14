@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		04AFCA79FF461FDE9D23D318 /* libPods-tiantianzhibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF8AE280A76011C3D16DD7E /* libPods-tiantianzhibo.a */; };
+		4C370B521D5F0D9E00792749 /* WatchSelectOfferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C370B511D5F0D9E00792749 /* WatchSelectOfferCell.xib */; };
+		4C370B551D5F12A000792749 /* WatchSelectOfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370B541D5F12A000792749 /* WatchSelectOfferTableViewCell.m */; };
+		4C370B5D1D5F1FC300792749 /* WatchSelectOfferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370B5C1D5F1FC300792749 /* WatchSelectOfferViewController.m */; };
 		4C68DF511D4E354F0009695C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF501D4E354F0009695C /* main.m */; };
 		4C68DF541D4E354F0009695C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF531D4E354F0009695C /* AppDelegate.m */; };
 		4C68DF571D4E354F0009695C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF561D4E354F0009695C /* ViewController.m */; };
@@ -143,6 +146,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C370B511D5F0D9E00792749 /* WatchSelectOfferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchSelectOfferCell.xib; sourceTree = "<group>"; };
+		4C370B531D5F12A000792749 /* WatchSelectOfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchSelectOfferTableViewCell.h; sourceTree = "<group>"; };
+		4C370B541D5F12A000792749 /* WatchSelectOfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchSelectOfferTableViewCell.m; sourceTree = "<group>"; };
+		4C370B5B1D5F1FC300792749 /* WatchSelectOfferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchSelectOfferViewController.h; sourceTree = "<group>"; };
+		4C370B5C1D5F1FC300792749 /* WatchSelectOfferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchSelectOfferViewController.m; sourceTree = "<group>"; };
 		4C68DF4C1D4E354F0009695C /* tiantianzhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiantianzhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C68DF501D4E354F0009695C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C68DF521D4E354F0009695C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -535,6 +543,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C370B3B1D5EF81100792749 /* trade */ = {
+			isa = PBXGroup;
+			children = (
+				4C370B511D5F0D9E00792749 /* WatchSelectOfferCell.xib */,
+				4C370B531D5F12A000792749 /* WatchSelectOfferTableViewCell.h */,
+				4C370B541D5F12A000792749 /* WatchSelectOfferTableViewCell.m */,
+				4C370B5B1D5F1FC300792749 /* WatchSelectOfferViewController.h */,
+				4C370B5C1D5F1FC300792749 /* WatchSelectOfferViewController.m */,
+			);
+			path = trade;
+			sourceTree = "<group>";
+		};
 		4C68DF431D4E354F0009695C = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +576,7 @@
 		4C68DF4E1D4E354F0009695C /* tiantianzhibo */ = {
 			isa = PBXGroup;
 			children = (
+				4C370B3B1D5EF81100792749 /* trade */,
 				4C9FAA931D5A07DC00F4FB38 /* librtmp-iOS */,
 				4C9FAA521D5A069000F4FB38 /* LFLiveKit */,
 				4C9FAA2C1D5A05DD00F4FB38 /* Mine */,
@@ -1281,6 +1302,7 @@
 				4C68DF5F1D4E354F0009695C /* LaunchScreen.storyboard in Resources */,
 				4C68DF5C1D4E354F0009695C /* Assets.xcassets in Resources */,
 				4C9FA6521D58D05200F4FB38 /* SVProgressHUD.bundle in Resources */,
+				4C370B521D5F0D9E00792749 /* WatchSelectOfferCell.xib in Resources */,
 				4C9FAAEF1D5A07DD00F4FB38 /* LICENSE in Resources */,
 				4C9FA2C91D5355EA00F4FB38 /* ChatViewController.xib in Resources */,
 				4C9FA2D61D536AEF00F4FB38 /* mybigimage.png in Resources */,
@@ -1349,6 +1371,7 @@
 				4C9FAA911D5A069000F4FB38 /* LFStreamRtmpSocket.m in Sources */,
 				4C9FA5661D58D05100F4FB38 /* AFURLSessionManager.m in Sources */,
 				4C9FA6881D5975C200F4FB38 /* SDWebImagePrefetcher.m in Sources */,
+				4C370B551D5F12A000792749 /* WatchSelectOfferTableViewCell.m in Sources */,
 				4C9FAA8D1D5A069000F4FB38 /* LFLiveStreamInfo.m in Sources */,
 				4C9FA6511D58D05200F4FB38 /* SVPHelper.m in Sources */,
 				4C9FA68C1D5975C200F4FB38 /* UIImage+WebP.m in Sources */,
@@ -1447,6 +1470,7 @@
 				4C9FA68F1D5975C200F4FB38 /* UIView+WebCacheOperation.m in Sources */,
 				4C9FA6391D58D05200F4FB38 /* ViewController+MASAdditions.m in Sources */,
 				4C9FA6361D58D05200F4FB38 /* NSArray+MASAdditions.m in Sources */,
+				4C370B5D1D5F1FC300792749 /* WatchSelectOfferViewController.m in Sources */,
 				4C9FA6331D58D05200F4FB38 /* MASLayoutConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
