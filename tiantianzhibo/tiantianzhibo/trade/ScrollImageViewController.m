@@ -52,7 +52,7 @@
     [self.view addSubview:_scrollView];
     
     _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.scrollView.frame.size.height - 20, ScrollScreenW, 20)];
-    [_pageControl setBackgroundColor:[UIColor blueColor]];
+    [_pageControl setBackgroundColor:[UIColor clearColor]];
     
     _pageControl.currentPage = 0;
     _pageControl.numberOfPages = [self.arrayImages count];

@@ -38,6 +38,9 @@
 		4C370C311D67CD6D00792749 /* ScrollImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C301D67CD6D00792749 /* ScrollImageViewController.m */; };
 		4C370C341D67EFFC00792749 /* OfferDetailMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C331D67EFFC00792749 /* OfferDetailMainViewController.m */; };
 		4C370C371D67F07900792749 /* OfferDetailMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C361D67F07900792749 /* OfferDetailMainTableViewCell.m */; };
+		4C370C391D68437500792749 /* OfferDetailEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C370C381D68437500792749 /* OfferDetailEntryCell.xib */; };
+		4C370C3C1D6844F700792749 /* OfferDetailEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C3B1D6844F700792749 /* OfferDetailEntryTableViewCell.m */; };
+		4C370C3F1D6845DE00792749 /* OfferDetailEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C3E1D6845DE00792749 /* OfferDetailEntryViewController.m */; };
 		4C68DF511D4E354F0009695C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF501D4E354F0009695C /* main.m */; };
 		4C68DF541D4E354F0009695C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF531D4E354F0009695C /* AppDelegate.m */; };
 		4C68DF571D4E354F0009695C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF561D4E354F0009695C /* ViewController.m */; };
@@ -284,6 +287,11 @@
 		4C370C331D67EFFC00792749 /* OfferDetailMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailMainViewController.m; sourceTree = "<group>"; };
 		4C370C351D67F07900792749 /* OfferDetailMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailMainTableViewCell.h; sourceTree = "<group>"; };
 		4C370C361D67F07900792749 /* OfferDetailMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailMainTableViewCell.m; sourceTree = "<group>"; };
+		4C370C381D68437500792749 /* OfferDetailEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferDetailEntryCell.xib; sourceTree = "<group>"; };
+		4C370C3A1D6844F700792749 /* OfferDetailEntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailEntryTableViewCell.h; sourceTree = "<group>"; };
+		4C370C3B1D6844F700792749 /* OfferDetailEntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailEntryTableViewCell.m; sourceTree = "<group>"; };
+		4C370C3D1D6845DE00792749 /* OfferDetailEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailEntryViewController.h; sourceTree = "<group>"; };
+		4C370C3E1D6845DE00792749 /* OfferDetailEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailEntryViewController.m; sourceTree = "<group>"; };
 		4C68DF4C1D4E354F0009695C /* tiantianzhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiantianzhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C68DF501D4E354F0009695C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C68DF521D4E354F0009695C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -564,6 +572,11 @@
 				4C370C331D67EFFC00792749 /* OfferDetailMainViewController.m */,
 				4C370C351D67F07900792749 /* OfferDetailMainTableViewCell.h */,
 				4C370C361D67F07900792749 /* OfferDetailMainTableViewCell.m */,
+				4C370C381D68437500792749 /* OfferDetailEntryCell.xib */,
+				4C370C3A1D6844F700792749 /* OfferDetailEntryTableViewCell.h */,
+				4C370C3B1D6844F700792749 /* OfferDetailEntryTableViewCell.m */,
+				4C370C3D1D6845DE00792749 /* OfferDetailEntryViewController.h */,
+				4C370C3E1D6845DE00792749 /* OfferDetailEntryViewController.m */,
 			);
 			path = trade;
 			sourceTree = "<group>";
@@ -1318,6 +1331,7 @@
 				4C9FAA501D5A05DD00F4FB38 /* MineHeadView.xib in Resources */,
 				4C68DF5A1D4E354F0009695C /* Main.storyboard in Resources */,
 				4C9FAA4E1D5A05DD00F4FB38 /* MiddleView.xib in Resources */,
+				4C370C391D68437500792749 /* OfferDetailEntryCell.xib in Resources */,
 				4C370BFE1D60B38E00792749 /* OfferDetailMainCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1393,6 +1407,7 @@
 				4C9FAA4F1D5A05DD00F4FB38 /* MineHeadView.m in Sources */,
 				4C9FAA461D5A05DD00F4FB38 /* UIBarButtonItem+Item.m in Sources */,
 				4C9FA6801D5975C200F4FB38 /* MKAnnotationView+WebCache.m in Sources */,
+				4C370C3F1D6845DE00792749 /* OfferDetailEntryViewController.m in Sources */,
 				4C370BF71D60961C00792749 /* LFLiveStreamInfo.m in Sources */,
 				4C370BFC1D60961C00792749 /* NSMutableArray+LFAdd.m in Sources */,
 				4C9FA9011D5A03CE00F4FB38 /* MainNavigationController.m in Sources */,
@@ -1449,6 +1464,7 @@
 				4C9FAA201D5A05B200F4FB38 /* PlayerModel.m in Sources */,
 				4C9FA64C1D58D05200F4FB38 /* GCDAsyncSocket.m in Sources */,
 				4C9FA5621D58D05100F4FB38 /* AFSecurityPolicy.m in Sources */,
+				4C370C3C1D6844F700792749 /* OfferDetailEntryTableViewCell.m in Sources */,
 				4C9FA9021D5A03CE00F4FB38 /* MainTabBarController.m in Sources */,
 				4C68DF541D4E354F0009695C /* AppDelegate.m in Sources */,
 				4C9FA6321D58D05200F4FB38 /* MASConstraintMaker.m in Sources */,

@@ -1,70 +1,38 @@
 //
-//  OfferDetailMainViewController.m
+//  OfferDetailEntryViewController.m
 //  tiantianzhibo
 //
 //  Created by michael on 20/8/2016.
 //  Copyright © 2016 michael. All rights reserved.
 //
 
-#import "OfferDetailMainViewController.h"
-
-#import "OfferDetailMainTableViewCell.h"
 #import "OfferDetailEntryViewController.h"
+#import "OfferDetailEntryTableViewCell.h"
 
-#define ScreenH [UIScreen mainScreen].bounds.size.height
-#define ScreenW [UIScreen mainScreen].bounds.size.width
-
-
-@interface OfferDetailMainViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface OfferDetailEntryViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView * tableView;
 
-@property (weak, nonatomic) UIView *myOfferDetaiEntrylView;
 
 
 @end
 
-@implementation OfferDetailMainViewController
-
-
-
-- (IBAction)showOfferEntry:(id)sender {
-    
-    NSLog(@"xxxxxx");
-    
-    
-    OfferDetailEntryViewController  *offerDetailEntryVc = [[OfferDetailEntryViewController alloc] init];
-    // [self presentViewController:offerVc animated:YES completion:nil];
-    
-    //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
-    [self addChildViewController:offerDetailEntryVc];
-    
-    
-    _myOfferDetaiEntrylView =   [offerDetailEntryVc view];
-    _myOfferDetaiEntrylView.frame = CGRectMake(0,0, ScreenW, ScreenH);
-    //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
-    [self.view addSubview:_myOfferDetaiEntrylView];
-    
-
-    
-    
-    
-}
+@implementation OfferDetailEntryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setupTableView];
-
     // Do any additional setup after loading the view.
 }
+
 
 - (void)setupTableView {
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _tableView.rowHeight = 500;
+    _tableView.rowHeight = 300;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_tableView];
     
@@ -72,7 +40,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 3;
 }
 
 
@@ -80,20 +48,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString * cellIdentifier = @"OfferDetailMainTableViewCell";
+    static NSString * cellIdentifier = @"OfferDetailEntryTableViewCell";
     
-    OfferDetailMainTableViewCell *cell =  (OfferDetailMainTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    OfferDetailEntryTableViewCell *cell =  (OfferDetailEntryTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     // WatchSelectOfferTableViewCell *cell =  (WatchSelectOfferTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     
     if (cell==nil) {
         
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"OfferDetailMainCell" owner:self options:nil];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"OfferDetailEntryCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
         
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    ///[cell viewWithTag:2]; set image
     // PlayerModel * playerModel = [self.dataArray objectAtIndex:indexPath.row];
     // cell.playerModel = playerModel;
     
@@ -119,8 +89,10 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 1000;
+    return 300;
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {
