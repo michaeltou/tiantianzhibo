@@ -19,12 +19,37 @@
 
 @implementation WatchSelectOfferViewController
 
+/*
+- (IBAction)showOfferDetail:(id)sender {
+    
+    OfferDetailMainViewController  *offerDetailMainVc = [[OfferDetailMainViewController alloc] init];
+    // [self presentViewController:offerVc animated:YES completion:nil];
+    
+       //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
+     [self addChildViewController:offerDetailMainVc];
+     
+     
+     _myOfferDetailView =   [offerDetailMainVc view];
+     _myOfferDetailView.frame = CGRectMake(0,0, ScreenW, ScreenH);
+     //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
+     [self.view addSubview:_myOfferDetailView];
+     
+    
+    
+    
+}*/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setupTableView];
+    
+    
+ 
+    
     // Do any additional setup after loading the view.
 }
+
 
 - (void)setupTableView {
     
@@ -80,6 +105,8 @@
     */
     
     
+    
+
     
     
     return cell;

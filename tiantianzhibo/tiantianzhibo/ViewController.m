@@ -28,8 +28,7 @@
 
 
 
-#import "GiftViewController.h"
-#import "ChatViewController.h"
+ #import "ChatViewController.h"
 
 @interface ViewController ()
 
@@ -47,8 +46,6 @@
 /* 聊天视图 */
 @property (weak, nonatomic) UIView *chatView;
 
-/* 礼物视图控制器 */
-@property  GiftViewController * myGiftViewController;
 
 /* 聊天视图控制器 */
 @property  ChatViewController * myChatViewController;
@@ -575,6 +572,8 @@ GPUImageVideoCamera *_videoCamera;
 /**
  从xib文件中加载新视图
  **/
+
+/*
 -(void)loadGiftViewFromXIB{
     // BlueView.xib的File's Owner为nil
     // NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"GiftViewController" owner:nil options:nil];
@@ -589,7 +588,9 @@ GPUImageVideoCamera *_videoCamera;
     _giftView.frame = CGRectMake(0,self.view.bounds.size.height-180, self.view.bounds.size.width, 180);
     [_giftView setBackgroundColor: [UIColor clearColor]];
     [self.view addSubview:_giftView];
-}
+} */
+
+
 
 /**
  从xib文件中加载新视图
@@ -619,6 +620,8 @@ GPUImageVideoCamera *_videoCamera;
 }
 
 
+/*
+
 -(void)switchView{
     GiftViewController *giftViewController = [[GiftViewController alloc] initWithNibName:@"GiftViewController"  bundle:nil];
     
@@ -635,7 +638,7 @@ GPUImageVideoCamera *_videoCamera;
     
     
     
-}
+} */
 
 
 /*

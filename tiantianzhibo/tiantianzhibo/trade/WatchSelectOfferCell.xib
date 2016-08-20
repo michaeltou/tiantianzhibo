@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_2" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-Ur-MmA">
+                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_2" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-Ur-MmA">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <variation key="widthClass=compact" fixedFrame="YES">
                             <rect key="frame" x="8" y="8" width="105" height="88"/>
@@ -38,6 +38,12 @@
                             <rect key="frame" x="121" y="37" width="131" height="21"/>
                         </variation>
                     </label>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5fF-uU-V1v">
+                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="309" y="33" width="94" height="29"/>
+                        </variation>
+                    </stepper>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无印生活馆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqa-yN-OlR">
                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -50,26 +56,30 @@
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g0-24-h6l">
                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <state key="normal" title="立即购买"/>
+                        <state key="normal" title="立即购买">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
                         <variation key="widthClass=compact" fixedFrame="YES">
                             <rect key="frame" x="309" y="71" width="109" height="30"/>
                         </variation>
                     </button>
-                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5fF-uU-V1v">
-                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-xZ-2cj">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
                         <variation key="widthClass=compact" fixedFrame="YES">
-                            <rect key="frame" x="309" y="33" width="94" height="29"/>
+                            <rect key="frame" x="13" y="104" width="94" height="30"/>
                         </variation>
-                    </stepper>
+                    </button>
                 </subviews>
                 <variation key="default">
                     <mask key="subviews">
                         <exclude reference="mzM-Ur-MmA"/>
                         <exclude reference="U2P-gk-ZSY"/>
                         <exclude reference="Wm8-XF-7ZC"/>
+                        <exclude reference="5fF-uU-V1v"/>
                         <exclude reference="Vqa-yN-OlR"/>
                         <exclude reference="5g0-24-h6l"/>
-                        <exclude reference="5fF-uU-V1v"/>
+                        <exclude reference="cfd-xZ-2cj"/>
                     </mask>
                 </variation>
                 <variation key="widthClass=compact">
@@ -77,14 +87,14 @@
                         <include reference="mzM-Ur-MmA"/>
                         <include reference="U2P-gk-ZSY"/>
                         <include reference="Wm8-XF-7ZC"/>
+                        <include reference="5fF-uU-V1v"/>
                         <include reference="Vqa-yN-OlR"/>
                         <include reference="5g0-24-h6l"/>
-                        <include reference="5fF-uU-V1v"/>
+                        <include reference="cfd-xZ-2cj"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="buyOfferBtn" destination="5g0-24-h6l" id="xNQ-Ir-qal"/>
                 <outlet property="offerImageView" destination="mzM-Ur-MmA" id="rbw-FX-WEX"/>
                 <outlet property="offerPriceLabel" destination="Wm8-XF-7ZC" id="K5g-Cy-cY7"/>
                 <outlet property="offerTitleLabel" destination="U2P-gk-ZSY" id="3yU-Xs-gQq"/>

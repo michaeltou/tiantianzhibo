@@ -22,6 +22,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *buyOfferBtn;
 
 
+@property (weak, nonatomic) UIView *myOfferDetailView;
 
 
 @end

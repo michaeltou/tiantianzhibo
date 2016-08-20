@@ -14,6 +14,8 @@
 #import <Accelerate/Accelerate.h>
 
 #import "WatchSelectOfferViewController.h"
+#import "OfferDetailMainViewController.h"
+
 
 #define XJScreenH [UIScreen mainScreen].bounds.size.height
 #define XJScreenW [UIScreen mainScreen].bounds.size.width
@@ -37,6 +39,8 @@
 
 @property (weak, nonatomic) UIView *mySelectOfferView;
 
+@property (weak, nonatomic) UIView *myOfferDetailView;
+
 
 @end
 
@@ -57,6 +61,26 @@
     // 创建按钮
     [self setupBtn];
 
+}
+- (IBAction)showOfferDetail:(id)sender {
+    
+    NSLog(@"HERE");
+    OfferDetailMainViewController  *offerDetailMainVc = [[OfferDetailMainViewController alloc] init];
+    // [self presentViewController:offerVc animated:YES completion:nil];
+    
+    //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
+    [self addChildViewController:offerDetailMainVc];
+    
+    
+    _myOfferDetailView =   [offerDetailMainVc view];
+    _myOfferDetailView.frame = CGRectMake(0,0, XJScreenW, XJScreenH);
+    //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
+    [self.view addSubview:_myOfferDetailView];
+    
+    
+    
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -148,6 +172,17 @@
     [self.view addSubview:buyOfferBtn];
     
     
+    //购买商品
+    UIButton *showOfferDetailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    showOfferDetailBtn.frame = CGRectMake(XJScreenW - 100-30, XJScreenH - 36 - 10, 36, 36);
+    [showOfferDetailBtn setImage:[UIImage imageNamed:@"gift"] forState:UIControlStateNormal];
+    [showOfferDetailBtn addTarget:self action:@selector(showOfferDetail) forControlEvents:UIControlEventTouchUpInside];
+    showOfferDetailBtn.layer.shadowColor = [UIColor blackColor].CGColor;
+    showOfferDetailBtn.layer.shadowOffset = CGSizeMake(0, 0);
+    showOfferDetailBtn.layer.shadowOpacity = 0.5;
+    showOfferDetailBtn.layer.shadowRadius = 1;
+    [self.view addSubview:showOfferDetailBtn];
+    
 }
 
 -(void)showBuyOffer{
@@ -160,11 +195,30 @@
 
     
    _mySelectOfferView =   [offerVc view];
-    _mySelectOfferView.frame = CGRectMake(0,XJScreenH-500, XJScreenW, 300);
+    _mySelectOfferView.frame = CGRectMake(0,XJScreenH-300, XJScreenW, 300);
     //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview:_mySelectOfferView];
     
     
+    
+}
+
+-(void)showOfferDetail{
+    
+    NSLog(@"HERE");
+    OfferDetailMainViewController  *offerDetailMainVc = [[OfferDetailMainViewController alloc] init];
+    // [self presentViewController:offerVc animated:YES completion:nil];
+    
+    //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
+    [self addChildViewController:offerDetailMainVc];
+    
+    
+    _myOfferDetailView =   [offerDetailMainVc view];
+    _myOfferDetailView.frame = CGRectMake(0,0, XJScreenW, XJScreenH);
+    //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
+    [self.view addSubview:_myOfferDetailView];
+    
+
     
 }
 
