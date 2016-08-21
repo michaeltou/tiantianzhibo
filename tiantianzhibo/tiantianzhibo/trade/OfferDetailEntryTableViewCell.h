@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OfferDetailEntryTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 
 @end

@@ -28,40 +28,24 @@
 
 
 
-- (IBAction)showOfferEntry:(id)sender {
-    
-    NSLog(@"xxxxxx");
-    
-    
-    OfferDetailEntryViewController  *offerDetailEntryVc = [[OfferDetailEntryViewController alloc] init];
-    // [self presentViewController:offerVc animated:YES completion:nil];
-    
-    //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
-    [self addChildViewController:offerDetailEntryVc];
-    
-    
-    _myOfferDetaiEntrylView =   [offerDetailEntryVc view];
-    _myOfferDetaiEntrylView.frame = CGRectMake(0,0, ScreenW, ScreenH);
-    //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
-    [self.view addSubview:_myOfferDetaiEntrylView];
-    
-
-    
-    
-    
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setupTableView];
+    
+    [self addAdditionalButton];
 
-    // Do any additional setup after loading the view.
-}
+ }
+
 
 - (void)setupTableView {
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 50, ScreenW, ScreenH) style:UITableViewStylePlain];
+    
+    
+   // self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.rowHeight = 500;
@@ -70,6 +54,55 @@
     
     
 }
+
+
+-(void)addAdditionalButton{
+    
+    //购买商品
+    UIButton *showOfferDetailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    showOfferDetailBtn.frame = CGRectMake(10,10, 36, 36);
+    [showOfferDetailBtn setImage:[UIImage imageNamed:@"NavBack"] forState:UIControlStateNormal];
+    [showOfferDetailBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+    showOfferDetailBtn.layer.shadowColor = [UIColor blackColor].CGColor;
+    showOfferDetailBtn.layer.shadowOffset = CGSizeMake(0, 0);
+    showOfferDetailBtn.layer.shadowOpacity = 0.5;
+    showOfferDetailBtn.layer.shadowRadius = 1;
+    [self.view addSubview:showOfferDetailBtn];
+    
+    
+}
+
+-(void)goBack{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+
+- (IBAction)showOfferEntry:(id)sender {
+    
+    NSLog(@"xxxxxx");
+    
+    
+    OfferDetailEntryViewController  *offerDetailEntryVc = [[OfferDetailEntryViewController alloc] init];
+    [self presentViewController:offerDetailEntryVc animated:YES completion:nil];
+    
+    /*   //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
+     [self addChildViewController:offerDetailEntryVc];
+     
+     
+     _myOfferDetaiEntrylView =   [offerDetailEntryVc view];
+     _myOfferDetaiEntrylView.frame = CGRectMake(0,0, ScreenW, ScreenH);
+     //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
+     [self.view addSubview:_myOfferDetaiEntrylView];
+     
+     
+     */
+    
+    
+}
+
+
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;

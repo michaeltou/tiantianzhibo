@@ -207,9 +207,9 @@
     
     NSLog(@"HERE");
     OfferDetailMainViewController  *offerDetailMainVc = [[OfferDetailMainViewController alloc] init];
-    // [self presentViewController:offerVc animated:YES completion:nil];
+     [self presentViewController:offerDetailMainVc animated:YES completion:nil];
     
-    //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
+ /*   //这个很关键，增加子控制器，才能保证子页面的tableview在滑动时，不消失内容。这里是个坑。
     [self addChildViewController:offerDetailMainVc];
     
     
@@ -217,7 +217,7 @@
     _myOfferDetailView.frame = CGRectMake(0,0, XJScreenW, XJScreenH);
     //[_mySelectOfferView setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview:_myOfferDetailView];
-    
+   */
 
     
 }

@@ -8,6 +8,9 @@
 
 #import "OfferDetailEntryTableViewCell.h"
 
+#import "UIImageView+WebCache.h"
+
+
 @implementation OfferDetailEntryTableViewCell
 
 - (void)awakeFromNib {
