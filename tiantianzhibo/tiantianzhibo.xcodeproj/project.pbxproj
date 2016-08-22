@@ -41,6 +41,10 @@
 		4C370C391D68437500792749 /* OfferDetailEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C370C381D68437500792749 /* OfferDetailEntryCell.xib */; };
 		4C370C3C1D6844F700792749 /* OfferDetailEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C3B1D6844F700792749 /* OfferDetailEntryTableViewCell.m */; };
 		4C370C3F1D6845DE00792749 /* OfferDetailEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C3E1D6845DE00792749 /* OfferDetailEntryViewController.m */; };
+		4C370C651D6B23D500792749 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C370C641D6B23D500792749 /* MyCollectionCell.xib */; };
+		4C370C681D6B24F500792749 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C671D6B24F500792749 /* MyCollectionViewCell.m */; };
+		4C370C6F1D6B299B00792749 /* MyCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C6D1D6B299B00792749 /* MyCollectionViewViewController.m */; };
+		4C370C701D6B299B00792749 /* MyCollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C370C6E1D6B299B00792749 /* MyCollectionViewViewController.xib */; };
 		4C68DF511D4E354F0009695C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF501D4E354F0009695C /* main.m */; };
 		4C68DF541D4E354F0009695C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF531D4E354F0009695C /* AppDelegate.m */; };
 		4C68DF571D4E354F0009695C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68DF561D4E354F0009695C /* ViewController.m */; };
@@ -292,6 +296,12 @@
 		4C370C3B1D6844F700792749 /* OfferDetailEntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailEntryTableViewCell.m; sourceTree = "<group>"; };
 		4C370C3D1D6845DE00792749 /* OfferDetailEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailEntryViewController.h; sourceTree = "<group>"; };
 		4C370C3E1D6845DE00792749 /* OfferDetailEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailEntryViewController.m; sourceTree = "<group>"; };
+		4C370C641D6B23D500792749 /* MyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
+		4C370C661D6B24F500792749 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		4C370C671D6B24F500792749 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		4C370C6C1D6B299B00792749 /* MyCollectionViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewViewController.h; sourceTree = "<group>"; };
+		4C370C6D1D6B299B00792749 /* MyCollectionViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewViewController.m; sourceTree = "<group>"; };
+		4C370C6E1D6B299B00792749 /* MyCollectionViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewViewController.xib; sourceTree = "<group>"; };
 		4C68DF4C1D4E354F0009695C /* tiantianzhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiantianzhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C68DF501D4E354F0009695C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C68DF521D4E354F0009695C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -560,6 +570,7 @@
 		4C370B3B1D5EF81100792749 /* trade */ = {
 			isa = PBXGroup;
 			children = (
+				4C370C631D6B23B300792749 /* tools */,
 				4C370C2F1D67CD6D00792749 /* ScrollImageViewController.h */,
 				4C370C301D67CD6D00792749 /* ScrollImageViewController.m */,
 				4C370B511D5F0D9E00792749 /* WatchSelectOfferCell.xib */,
@@ -797,6 +808,19 @@
 				4C370BEA1D60961C00792749 /* NSMutableArray+LFAdd.m */,
 			);
 			path = upload;
+			sourceTree = "<group>";
+		};
+		4C370C631D6B23B300792749 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				4C370C641D6B23D500792749 /* MyCollectionCell.xib */,
+				4C370C661D6B24F500792749 /* MyCollectionViewCell.h */,
+				4C370C671D6B24F500792749 /* MyCollectionViewCell.m */,
+				4C370C6C1D6B299B00792749 /* MyCollectionViewViewController.h */,
+				4C370C6D1D6B299B00792749 /* MyCollectionViewViewController.m */,
+				4C370C6E1D6B299B00792749 /* MyCollectionViewViewController.xib */,
+			);
+			name = tools;
 			sourceTree = "<group>";
 		};
 		4C68DF431D4E354F0009695C = {
@@ -1323,12 +1347,14 @@
 				4C9FA2EC1D58B63400F4FB38 /* iosLibs in Resources */,
 				4C68DF5F1D4E354F0009695C /* LaunchScreen.storyboard in Resources */,
 				4C68DF5C1D4E354F0009695C /* Assets.xcassets in Resources */,
+				4C370C651D6B23D500792749 /* MyCollectionCell.xib in Resources */,
 				4C9FA6521D58D05200F4FB38 /* SVProgressHUD.bundle in Resources */,
 				4C370B521D5F0D9E00792749 /* WatchSelectOfferCell.xib in Resources */,
 				4C370BBA1D60951000792749 /* LICENSE in Resources */,
 				4C9FA2C91D5355EA00F4FB38 /* ChatViewController.xib in Resources */,
 				4C9FA2D61D536AEF00F4FB38 /* mybigimage.png in Resources */,
 				4C9FAA501D5A05DD00F4FB38 /* MineHeadView.xib in Resources */,
+				4C370C701D6B299B00792749 /* MyCollectionViewViewController.xib in Resources */,
 				4C68DF5A1D4E354F0009695C /* Main.storyboard in Resources */,
 				4C9FAA4E1D5A05DD00F4FB38 /* MiddleView.xib in Resources */,
 				4C370C391D68437500792749 /* OfferDetailEntryCell.xib in Resources */,
@@ -1425,6 +1451,7 @@
 				4C9FA6861D5975C200F4FB38 /* SDWebImageDownloaderOperation.m in Sources */,
 				4C370BBB1D60951000792749 /* README.md in Sources */,
 				4C9FA68A1D5975C200F4FB38 /* UIImage+GIF.m in Sources */,
+				4C370C681D6B24F500792749 /* MyCollectionViewCell.m in Sources */,
 				4C9FAA1C1D5A05B200F4FB38 /* NewViewController.m in Sources */,
 				4C9FA63A1D58D05200F4FB38 /* NetWorkEngine.m in Sources */,
 				4C9FAA1D1D5A05B200F4FB38 /* LiveViewController.m in Sources */,
@@ -1475,6 +1502,7 @@
 				4C9FA5641D58D05100F4FB38 /* AFURLRequestSerialization.m in Sources */,
 				4C9FAA4B1D5A05DD00F4FB38 /* UIView+XJExtension.m in Sources */,
 				4C9FA6351D58D05200F4FB38 /* MASViewConstraint.m in Sources */,
+				4C370C6F1D6B299B00792749 /* MyCollectionViewViewController.m in Sources */,
 				4C9FA6181D58D05100F4FB38 /* DMHeartFlyView.m in Sources */,
 				4C9FA5611D58D05100F4FB38 /* AFNetworkReachabilityManager.m in Sources */,
 				4C370BEE1D60961C00792749 /* LFHardwareVideoEncoder.m in Sources */,

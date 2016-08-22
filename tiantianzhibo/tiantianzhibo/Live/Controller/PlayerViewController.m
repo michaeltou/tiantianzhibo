@@ -15,6 +15,7 @@
 
 #import "WatchSelectOfferViewController.h"
 #import "OfferDetailMainViewController.h"
+#import "MyCollectionViewViewController.h"
 
 
 #define XJScreenH [UIScreen mainScreen].bounds.size.height
@@ -182,6 +183,28 @@
     showOfferDetailBtn.layer.shadowOpacity = 0.5;
     showOfferDetailBtn.layer.shadowRadius = 1;
     [self.view addSubview:showOfferDetailBtn];
+    
+    //购买商品
+    UIButton *showCollectionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    showCollectionBtn.frame = CGRectMake(XJScreenW - 100-30-30, XJScreenH - 36 - 10, 36, 36);
+    [showCollectionBtn setImage:[UIImage imageNamed:@"gift"] forState:UIControlStateNormal];
+    [showCollectionBtn addTarget:self action:@selector(showCollectionView) forControlEvents:UIControlEventTouchUpInside];
+    showCollectionBtn.layer.shadowColor = [UIColor blackColor].CGColor;
+    showCollectionBtn.layer.shadowOffset = CGSizeMake(0, 0);
+    showCollectionBtn.layer.shadowOpacity = 0.5;
+    showCollectionBtn.layer.shadowRadius = 1;
+    [self.view addSubview:showCollectionBtn];
+    
+    
+}
+
+
+-(void)showCollectionView{
+     MyCollectionViewViewController  *collectionViewVc = [[MyCollectionViewViewController alloc] init];
+     [self presentViewController:collectionViewVc animated:YES completion:nil];
+    
+    
+    
     
 }
 
