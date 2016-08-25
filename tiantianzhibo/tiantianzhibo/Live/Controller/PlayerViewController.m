@@ -17,6 +17,8 @@
 #import "OfferDetailMainViewController.h"
 #import "MyCollectionViewViewController.h"
 
+#import "MakeOrderViewController.h"
+
 
 #define XJScreenH [UIScreen mainScreen].bounds.size.height
 #define XJScreenW [UIScreen mainScreen].bounds.size.width
@@ -173,7 +175,7 @@
     [self.view addSubview:buyOfferBtn];
     
     
-    //购买商品
+    //商品详情
     UIButton *showOfferDetailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     showOfferDetailBtn.frame = CGRectMake(XJScreenW - 100-30, XJScreenH - 36 - 10, 36, 36);
     [showOfferDetailBtn setImage:[UIImage imageNamed:@"gift"] forState:UIControlStateNormal];
@@ -184,7 +186,7 @@
     showOfferDetailBtn.layer.shadowRadius = 1;
     [self.view addSubview:showOfferDetailBtn];
     
-    //购买商品
+    //展示collectionView
     UIButton *showCollectionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     showCollectionBtn.frame = CGRectMake(XJScreenW - 100-30-30, XJScreenH - 36 - 10, 36, 36);
     [showCollectionBtn setImage:[UIImage imageNamed:@"gift"] forState:UIControlStateNormal];
@@ -196,7 +198,31 @@
     [self.view addSubview:showCollectionBtn];
     
     
+    //展示下单页面
+    UIButton *showMakeOrderBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    showMakeOrderBtn.frame = CGRectMake(XJScreenW - 100-30-30-30, XJScreenH - 36 - 10, 36, 36);
+    [showMakeOrderBtn setImage:[UIImage imageNamed:@"gift"] forState:UIControlStateNormal];
+    [showMakeOrderBtn addTarget:self action:@selector(showMakeOrderView) forControlEvents:UIControlEventTouchUpInside];
+    showMakeOrderBtn.layer.shadowColor = [UIColor blackColor].CGColor;
+    showMakeOrderBtn.layer.shadowOffset = CGSizeMake(0, 0);
+    showMakeOrderBtn.layer.shadowOpacity = 0.5;
+    showMakeOrderBtn.layer.shadowRadius = 1;
+    [self.view addSubview:showMakeOrderBtn];
+    
+    
 }
+
+
+-(void)showMakeOrderView{
+    MakeOrderViewController  *makeOrderViewVc = [[MakeOrderViewController alloc] init];
+    [self presentViewController:makeOrderViewVc animated:YES completion:nil];
+    
+    
+    
+    
+}
+
+
 
 
 -(void)showCollectionView{

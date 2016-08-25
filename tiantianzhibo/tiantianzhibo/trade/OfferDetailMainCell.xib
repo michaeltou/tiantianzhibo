@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -15,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="487" height="567"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Jp-yv-43t">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Jp-yv-43t">
                         <rect key="frame" x="8" y="8" width="429" height="350"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -293,14 +294,14 @@
                         <exclude reference="isx-w8-bms"/>
                     </mask>
                     <mask key="constraints">
-                        <exclude reference="1ty-33-JVu"/>
-                        <exclude reference="BYF-NQ-BqR"/>
-                        <exclude reference="ibL-FT-gew"/>
                         <exclude reference="BbQ-AX-DXJ"/>
                         <exclude reference="CUF-ok-Bri"/>
                         <exclude reference="OWx-qc-NeK"/>
                         <exclude reference="ceD-IX-Bki"/>
                         <exclude reference="lgl-TQ-afo"/>
+                        <exclude reference="1ty-33-JVu"/>
+                        <exclude reference="BYF-NQ-BqR"/>
+                        <exclude reference="ibL-FT-gew"/>
                     </mask>
                 </variation>
                 <variation key="widthClass=compact">
@@ -313,14 +314,14 @@
                         <include reference="isx-w8-bms"/>
                     </mask>
                     <mask key="constraints">
-                        <include reference="1ty-33-JVu"/>
-                        <include reference="BYF-NQ-BqR"/>
-                        <include reference="ibL-FT-gew"/>
                         <include reference="BbQ-AX-DXJ"/>
                         <include reference="CUF-ok-Bri"/>
                         <include reference="OWx-qc-NeK"/>
                         <include reference="ceD-IX-Bki"/>
                         <include reference="lgl-TQ-afo"/>
+                        <include reference="1ty-33-JVu"/>
+                        <include reference="BYF-NQ-BqR"/>
+                        <include reference="ibL-FT-gew"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
