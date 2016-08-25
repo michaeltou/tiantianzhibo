@@ -156,6 +156,7 @@
 		4C9FAA4F1D5A05DD00F4FB38 /* MineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FAA421D5A05DD00F4FB38 /* MineHeadView.m */; };
 		4C9FAA501D5A05DD00F4FB38 /* MineHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FAA431D5A05DD00F4FB38 /* MineHeadView.xib */; };
 		4C9FAA511D5A05DD00F4FB38 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FAA451D5A05DD00F4FB38 /* MyView.m */; };
+		4CA9A6EF1D6F0B9E00E3CB5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA9A6EE1D6F0B9E00E3CB5D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -512,6 +513,7 @@
 		4C9FAA431D5A05DD00F4FB38 /* MineHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineHeadView.xib; sourceTree = "<group>"; };
 		4C9FAA441D5A05DD00F4FB38 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		4C9FAA451D5A05DD00F4FB38 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		4CA9A6EE1D6F0B9E00E3CB5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6BDA2C253ECBCB618DBAA218 /* Pods-tiantianzhibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiantianzhibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-tiantianzhibo/Pods-tiantianzhibo.release.xcconfig"; sourceTree = "<group>"; };
 		B172D9EEF2619272EBB792AD /* Pods-tiantianzhibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiantianzhibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tiantianzhibo/Pods-tiantianzhibo.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF8AE280A76011C3D16DD7E /* libPods-tiantianzhibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tiantianzhibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -892,6 +894,7 @@
 				4C9FA2CD1D53579B00F4FB38 /* ChatModel.m */,
 				4C9FA2D21D53698300F4FB38 /* BigHallViewController.h */,
 				4C9FA2D31D53698300F4FB38 /* BigHallViewController.m */,
+				4CA9A6EE1D6F0B9E00E3CB5D /* Images.xcassets */,
 			);
 			path = tiantianzhibo;
 			sourceTree = "<group>";
@@ -1382,6 +1385,7 @@
 				4C370C731D6D20C600792749 /* MakeOrder.xib in Resources */,
 				4C370C701D6B299B00792749 /* MyCollectionViewViewController.xib in Resources */,
 				4C68DF5A1D4E354F0009695C /* Main.storyboard in Resources */,
+				4CA9A6EF1D6F0B9E00E3CB5D /* Images.xcassets in Resources */,
 				4C9FAA4E1D5A05DD00F4FB38 /* MiddleView.xib in Resources */,
 				4C370C391D68437500792749 /* OfferDetailEntryCell.xib in Resources */,
 				4C370BFE1D60B38E00792749 /* OfferDetailMainCell.xib in Resources */,
