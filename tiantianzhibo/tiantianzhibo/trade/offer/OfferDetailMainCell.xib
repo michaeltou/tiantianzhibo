@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OfferDetailMainViewController"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="892" id="1kt-D8-7e6" customClass="OfferDetailMainTableViewCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1041" id="1kt-D8-7e6" customClass="OfferDetailMainTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="487" height="568"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1kt-D8-7e6" id="T4i-64-4V8">
@@ -304,7 +304,8 @@
                         <exclude reference="ibL-FT-gew"/>
                     </mask>
                 </variation>
-                <variation key="widthClass=compact">
+                <variation key="widthClass=compact" ambiguous="YES">
+                    <rect key="frame" x="0.0" y="0.0" width="487" height="567"/>
                     <mask key="subviews">
                         <include reference="2OD-iz-a8f"/>
                         <include reference="rUP-kX-cdx"/>
@@ -329,7 +330,7 @@
             <connections>
                 <outlet property="myOfferView" destination="2Jp-yv-43t" id="yeT-4e-quw"/>
             </connections>
-            <point key="canvasLocation" x="292" y="510"/>
+            <point key="canvasLocation" x="314.5" y="584.5"/>
         </tableViewCell>
     </objects>
     <resources>

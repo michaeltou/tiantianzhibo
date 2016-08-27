@@ -34,13 +34,7 @@
 		4C370BFA1D60961C00792749 /* LFStreamingBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370BE51D60961C00792749 /* LFStreamingBuffer.m */; };
 		4C370BFB1D60961C00792749 /* LFStreamRtmpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370BE71D60961C00792749 /* LFStreamRtmpSocket.m */; };
 		4C370BFC1D60961C00792749 /* NSMutableArray+LFAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370BEA1D60961C00792749 /* NSMutableArray+LFAdd.m */; };
-		4C370BFE1D60B38E00792749 /* OfferDetailMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C370BFD1D60B38E00792749 /* OfferDetailMainCell.xib */; };
 		4C370C311D67CD6D00792749 /* ScrollImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C301D67CD6D00792749 /* ScrollImageViewController.m */; };
-		4C370C341D67EFFC00792749 /* OfferDetailMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C331D67EFFC00792749 /* OfferDetailMainViewController.m */; };
-		4C370C371D67F07900792749 /* OfferDetailMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C361D67F07900792749 /* OfferDetailMainTableViewCell.m */; };
-		4C370C391D68437500792749 /* OfferDetailEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C370C381D68437500792749 /* OfferDetailEntryCell.xib */; };
-		4C370C3C1D6844F700792749 /* OfferDetailEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C3B1D6844F700792749 /* OfferDetailEntryTableViewCell.m */; };
-		4C370C3F1D6845DE00792749 /* OfferDetailEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C3E1D6845DE00792749 /* OfferDetailEntryViewController.m */; };
 		4C370C651D6B23D500792749 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C370C641D6B23D500792749 /* MyCollectionCell.xib */; };
 		4C370C681D6B24F500792749 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C671D6B24F500792749 /* MyCollectionViewCell.m */; };
 		4C370C6F1D6B299B00792749 /* MyCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C370C6D1D6B299B00792749 /* MyCollectionViewViewController.m */; };
@@ -155,6 +149,12 @@
 		4C9FAA501D5A05DD00F4FB38 /* MineHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FAA431D5A05DD00F4FB38 /* MineHeadView.xib */; };
 		4C9FAA511D5A05DD00F4FB38 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FAA451D5A05DD00F4FB38 /* MyView.m */; };
 		4CA9A6EF1D6F0B9E00E3CB5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA9A6EE1D6F0B9E00E3CB5D /* Images.xcassets */; };
+		4CA9A6FA1D717C1E00E3CB5D /* OfferDetailEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA9A6F11D717C1E00E3CB5D /* OfferDetailEntryCell.xib */; };
+		4CA9A6FB1D717C1E00E3CB5D /* OfferDetailEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9A6F31D717C1E00E3CB5D /* OfferDetailEntryTableViewCell.m */; };
+		4CA9A6FC1D717C1E00E3CB5D /* OfferDetailEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9A6F51D717C1E00E3CB5D /* OfferDetailEntryViewController.m */; };
+		4CA9A6FD1D717C1E00E3CB5D /* OfferDetailMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9A6F71D717C1E00E3CB5D /* OfferDetailMainTableViewCell.m */; };
+		4CA9A6FE1D717C1E00E3CB5D /* OfferDetailMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9A6F91D717C1E00E3CB5D /* OfferDetailMainViewController.m */; };
+		4CA9A7001D717CEA00E3CB5D /* OfferDetailMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA9A6FF1D717CEA00E3CB5D /* OfferDetailMainCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -287,18 +287,8 @@
 		4C370BE81D60961C00792749 /* LFStreamSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFStreamSocket.h; sourceTree = "<group>"; };
 		4C370BE91D60961C00792749 /* NSMutableArray+LFAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LFAdd.h"; sourceTree = "<group>"; };
 		4C370BEA1D60961C00792749 /* NSMutableArray+LFAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LFAdd.m"; sourceTree = "<group>"; };
-		4C370BFD1D60B38E00792749 /* OfferDetailMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferDetailMainCell.xib; sourceTree = "<group>"; };
 		4C370C2F1D67CD6D00792749 /* ScrollImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollImageViewController.h; sourceTree = "<group>"; };
 		4C370C301D67CD6D00792749 /* ScrollImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollImageViewController.m; sourceTree = "<group>"; };
-		4C370C321D67EFFC00792749 /* OfferDetailMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailMainViewController.h; sourceTree = "<group>"; };
-		4C370C331D67EFFC00792749 /* OfferDetailMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailMainViewController.m; sourceTree = "<group>"; };
-		4C370C351D67F07900792749 /* OfferDetailMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailMainTableViewCell.h; sourceTree = "<group>"; };
-		4C370C361D67F07900792749 /* OfferDetailMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailMainTableViewCell.m; sourceTree = "<group>"; };
-		4C370C381D68437500792749 /* OfferDetailEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OfferDetailEntryCell.xib; sourceTree = "<group>"; };
-		4C370C3A1D6844F700792749 /* OfferDetailEntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailEntryTableViewCell.h; sourceTree = "<group>"; };
-		4C370C3B1D6844F700792749 /* OfferDetailEntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailEntryTableViewCell.m; sourceTree = "<group>"; };
-		4C370C3D1D6845DE00792749 /* OfferDetailEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailEntryViewController.h; sourceTree = "<group>"; };
-		4C370C3E1D6845DE00792749 /* OfferDetailEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailEntryViewController.m; sourceTree = "<group>"; };
 		4C370C641D6B23D500792749 /* MyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
 		4C370C661D6B24F500792749 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		4C370C671D6B24F500792749 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
@@ -510,6 +500,16 @@
 		4C9FAA441D5A05DD00F4FB38 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		4C9FAA451D5A05DD00F4FB38 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		4CA9A6EE1D6F0B9E00E3CB5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CA9A6F11D717C1E00E3CB5D /* OfferDetailEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OfferDetailEntryCell.xib; path = offer/OfferDetailEntryCell.xib; sourceTree = "<group>"; };
+		4CA9A6F21D717C1E00E3CB5D /* OfferDetailEntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfferDetailEntryTableViewCell.h; path = offer/OfferDetailEntryTableViewCell.h; sourceTree = "<group>"; };
+		4CA9A6F31D717C1E00E3CB5D /* OfferDetailEntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfferDetailEntryTableViewCell.m; path = offer/OfferDetailEntryTableViewCell.m; sourceTree = "<group>"; };
+		4CA9A6F41D717C1E00E3CB5D /* OfferDetailEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfferDetailEntryViewController.h; path = offer/OfferDetailEntryViewController.h; sourceTree = "<group>"; };
+		4CA9A6F51D717C1E00E3CB5D /* OfferDetailEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfferDetailEntryViewController.m; path = offer/OfferDetailEntryViewController.m; sourceTree = "<group>"; };
+		4CA9A6F61D717C1E00E3CB5D /* OfferDetailMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfferDetailMainTableViewCell.h; path = offer/OfferDetailMainTableViewCell.h; sourceTree = "<group>"; };
+		4CA9A6F71D717C1E00E3CB5D /* OfferDetailMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfferDetailMainTableViewCell.m; path = offer/OfferDetailMainTableViewCell.m; sourceTree = "<group>"; };
+		4CA9A6F81D717C1E00E3CB5D /* OfferDetailMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OfferDetailMainViewController.h; path = offer/OfferDetailMainViewController.h; sourceTree = "<group>"; };
+		4CA9A6F91D717C1E00E3CB5D /* OfferDetailMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OfferDetailMainViewController.m; path = offer/OfferDetailMainViewController.m; sourceTree = "<group>"; };
+		4CA9A6FF1D717CEA00E3CB5D /* OfferDetailMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OfferDetailMainCell.xib; path = offer/OfferDetailMainCell.xib; sourceTree = "<group>"; };
 		6BDA2C253ECBCB618DBAA218 /* Pods-tiantianzhibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiantianzhibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-tiantianzhibo/Pods-tiantianzhibo.release.xcconfig"; sourceTree = "<group>"; };
 		B172D9EEF2619272EBB792AD /* Pods-tiantianzhibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiantianzhibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tiantianzhibo/Pods-tiantianzhibo.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF8AE280A76011C3D16DD7E /* libPods-tiantianzhibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tiantianzhibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -578,6 +578,7 @@
 		4C370B3B1D5EF81100792749 /* trade */ = {
 			isa = PBXGroup;
 			children = (
+				4CA9A6F01D717B4E00E3CB5D /* offer */,
 				4C370C711D6D205400792749 /* order */,
 				4C370C631D6B23B300792749 /* tools */,
 				4C370C2F1D67CD6D00792749 /* ScrollImageViewController.h */,
@@ -587,16 +588,6 @@
 				4C370B541D5F12A000792749 /* WatchSelectOfferTableViewCell.m */,
 				4C370B5B1D5F1FC300792749 /* WatchSelectOfferViewController.h */,
 				4C370B5C1D5F1FC300792749 /* WatchSelectOfferViewController.m */,
-				4C370BFD1D60B38E00792749 /* OfferDetailMainCell.xib */,
-				4C370C321D67EFFC00792749 /* OfferDetailMainViewController.h */,
-				4C370C331D67EFFC00792749 /* OfferDetailMainViewController.m */,
-				4C370C351D67F07900792749 /* OfferDetailMainTableViewCell.h */,
-				4C370C361D67F07900792749 /* OfferDetailMainTableViewCell.m */,
-				4C370C381D68437500792749 /* OfferDetailEntryCell.xib */,
-				4C370C3A1D6844F700792749 /* OfferDetailEntryTableViewCell.h */,
-				4C370C3B1D6844F700792749 /* OfferDetailEntryTableViewCell.m */,
-				4C370C3D1D6845DE00792749 /* OfferDetailEntryViewController.h */,
-				4C370C3E1D6845DE00792749 /* OfferDetailEntryViewController.m */,
 			);
 			path = trade;
 			sourceTree = "<group>";
@@ -1305,6 +1296,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4CA9A6F01D717B4E00E3CB5D /* offer */ = {
+			isa = PBXGroup;
+			children = (
+				4CA9A6FF1D717CEA00E3CB5D /* OfferDetailMainCell.xib */,
+				4CA9A6F11D717C1E00E3CB5D /* OfferDetailEntryCell.xib */,
+				4CA9A6F21D717C1E00E3CB5D /* OfferDetailEntryTableViewCell.h */,
+				4CA9A6F31D717C1E00E3CB5D /* OfferDetailEntryTableViewCell.m */,
+				4CA9A6F41D717C1E00E3CB5D /* OfferDetailEntryViewController.h */,
+				4CA9A6F51D717C1E00E3CB5D /* OfferDetailEntryViewController.m */,
+				4CA9A6F61D717C1E00E3CB5D /* OfferDetailMainTableViewCell.h */,
+				4CA9A6F71D717C1E00E3CB5D /* OfferDetailMainTableViewCell.m */,
+				4CA9A6F81D717C1E00E3CB5D /* OfferDetailMainViewController.h */,
+				4CA9A6F91D717C1E00E3CB5D /* OfferDetailMainViewController.m */,
+			);
+			name = offer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1365,6 +1373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA9A6FA1D717C1E00E3CB5D /* OfferDetailEntryCell.xib in Resources */,
 				4C9FAA031D5A049B00F4FB38 /* CameraViewController.xib in Resources */,
 				4C68DF5F1D4E354F0009695C /* LaunchScreen.storyboard in Resources */,
 				4C370C7B1D6E743000792749 /* MakeOrderViewController.xib in Resources */,
@@ -1377,11 +1386,10 @@
 				4C9FAA501D5A05DD00F4FB38 /* MineHeadView.xib in Resources */,
 				4C370C731D6D20C600792749 /* MakeOrder.xib in Resources */,
 				4C370C701D6B299B00792749 /* MyCollectionViewViewController.xib in Resources */,
+				4CA9A7001D717CEA00E3CB5D /* OfferDetailMainCell.xib in Resources */,
 				4C68DF5A1D4E354F0009695C /* Main.storyboard in Resources */,
 				4CA9A6EF1D6F0B9E00E3CB5D /* Images.xcassets in Resources */,
 				4C9FAA4E1D5A05DD00F4FB38 /* MiddleView.xib in Resources */,
-				4C370C391D68437500792749 /* OfferDetailEntryCell.xib in Resources */,
-				4C370BFE1D60B38E00792749 /* OfferDetailMainCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1446,6 +1454,8 @@
 				4C9FA6881D5975C200F4FB38 /* SDWebImagePrefetcher.m in Sources */,
 				4C370B551D5F12A000792749 /* WatchSelectOfferTableViewCell.m in Sources */,
 				4C370BF91D60961C00792749 /* LFLiveKit-dummy.m in Sources */,
+				4CA9A6FC1D717C1E00E3CB5D /* OfferDetailEntryViewController.m in Sources */,
+				4CA9A6FB1D717C1E00E3CB5D /* OfferDetailEntryTableViewCell.m in Sources */,
 				4C9FA6511D58D05200F4FB38 /* SVPHelper.m in Sources */,
 				4C9FA68C1D5975C200F4FB38 /* UIImage+WebP.m in Sources */,
 				4C370BF51D60961C00792749 /* LFFrame.m in Sources */,
@@ -1456,7 +1466,6 @@
 				4C9FAA4F1D5A05DD00F4FB38 /* MineHeadView.m in Sources */,
 				4C9FAA461D5A05DD00F4FB38 /* UIBarButtonItem+Item.m in Sources */,
 				4C9FA6801D5975C200F4FB38 /* MKAnnotationView+WebCache.m in Sources */,
-				4C370C3F1D6845DE00792749 /* OfferDetailEntryViewController.m in Sources */,
 				4C370BF71D60961C00792749 /* LFLiveStreamInfo.m in Sources */,
 				4C370BFC1D60961C00792749 /* NSMutableArray+LFAdd.m in Sources */,
 				4C9FA9011D5A03CE00F4FB38 /* MainNavigationController.m in Sources */,
@@ -1464,7 +1473,6 @@
 				4C9FA56A1D58D05100F4FB38 /* UIButton+AFNetworking.m in Sources */,
 				4C9FA56C1D58D05100F4FB38 /* UIProgressView+AFNetworking.m in Sources */,
 				4C9FA55E1D58D05100F4FB38 /* AFHTTPRequestOperation.m in Sources */,
-				4C370C371D67F07900792749 /* OfferDetailMainTableViewCell.m in Sources */,
 				4C9FAA1A1D5A05B200F4FB38 /* AttentionViewController.m in Sources */,
 				4C370BF11D60961C00792749 /* LFGPUImageBeautyFilter.m in Sources */,
 				4C9FAA4C1D5A05DD00F4FB38 /* MineViewController.m in Sources */,
@@ -1478,6 +1486,7 @@
 				4C9FAA1C1D5A05B200F4FB38 /* NewViewController.m in Sources */,
 				4C9FA63A1D58D05200F4FB38 /* NetWorkEngine.m in Sources */,
 				4C9FAA1D1D5A05B200F4FB38 /* LiveViewController.m in Sources */,
+				4CA9A6FD1D717C1E00E3CB5D /* OfferDetailMainTableViewCell.m in Sources */,
 				4C9FAA1F1D5A05B200F4FB38 /* SearchViewController.m in Sources */,
 				4C9FA6341D58D05200F4FB38 /* MASViewAttribute.m in Sources */,
 				4C370BFA1D60961C00792749 /* LFStreamingBuffer.m in Sources */,
@@ -1492,6 +1501,7 @@
 				4C9FA6311D58D05200F4FB38 /* MASConstraint.m in Sources */,
 				4C9FA6811D5975C200F4FB38 /* NSData+ImageContentType.m in Sources */,
 				4C9FA68D1D5975C200F4FB38 /* UIImageView+HighlightedWebCache.m in Sources */,
+				4CA9A6FE1D717C1E00E3CB5D /* OfferDetailMainViewController.m in Sources */,
 				4C9FA5601D58D05100F4FB38 /* AFHTTPSessionManager.m in Sources */,
 				4C9FA6891D5975C200F4FB38 /* UIButton+WebCache.m in Sources */,
 				4C9FAA211D5A05B200F4FB38 /* PlayerTableViewCell.m in Sources */,
@@ -1516,7 +1526,6 @@
 				4C9FAA201D5A05B200F4FB38 /* PlayerModel.m in Sources */,
 				4C9FA64C1D58D05200F4FB38 /* GCDAsyncSocket.m in Sources */,
 				4C9FA5621D58D05100F4FB38 /* AFSecurityPolicy.m in Sources */,
-				4C370C3C1D6844F700792749 /* OfferDetailEntryTableViewCell.m in Sources */,
 				4C9FA9021D5A03CE00F4FB38 /* MainTabBarController.m in Sources */,
 				4C68DF541D4E354F0009695C /* AppDelegate.m in Sources */,
 				4C9FA6321D58D05200F4FB38 /* MASConstraintMaker.m in Sources */,
@@ -1540,7 +1549,6 @@
 				4C9FA6381D58D05200F4FB38 /* View+MASAdditions.m in Sources */,
 				4C9FA5651D58D05100F4FB38 /* AFURLResponseSerialization.m in Sources */,
 				4C9FAA021D5A049B00F4FB38 /* CameraViewController.m in Sources */,
-				4C370C341D67EFFC00792749 /* OfferDetailMainViewController.m in Sources */,
 				4C9FAA471D5A05DD00F4FB38 /* UIControl+Add.m in Sources */,
 				4C9FA6821D5975C200F4FB38 /* SDImageCache.m in Sources */,
 				4C370BED1D60961C00792749 /* LFHardwareAudioEncoder.m in Sources */,
