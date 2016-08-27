@@ -9,6 +9,10 @@
 #import "WatchSelectOfferViewController.h"
 #import "WatchSelectOfferTableViewCell.h"
 
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+
+
 @interface WatchSelectOfferViewController () <UITableViewDelegate,UITableViewDataSource>
 
 
@@ -45,7 +49,7 @@
     [self setupTableView];
     
     
- 
+    [self addCloseBtn];
     
     // Do any additional setup after loading the view.
 }
@@ -62,6 +66,31 @@
     
     
 }
+
+-(void)addCloseBtn{
+    
+
+//展示下单页面
+UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+closeBtn.frame = CGRectMake(ScreenW-30, 5, 36, 36);
+[closeBtn setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+[closeBtn addTarget:self action:@selector(closeView) forControlEvents:UIControlEventTouchUpInside];
+closeBtn.layer.shadowColor = [UIColor blackColor].CGColor;
+closeBtn.layer.shadowOffset = CGSizeMake(0, 0);
+closeBtn.layer.shadowOpacity = 0.5;
+closeBtn.layer.shadowRadius = 1;
+[self.view addSubview:closeBtn];
+
+
+}
+
+
+-(void)closeView{
+    [[self view] removeFromSuperview];
+    
+}
+
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
