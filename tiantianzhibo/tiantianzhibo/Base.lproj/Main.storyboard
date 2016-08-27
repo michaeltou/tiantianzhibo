@@ -8,6 +8,7 @@
         <!--profile-->
         <scene sceneID="pKd-wy-S1r">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vev-xV-gky" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="profile" id="Vgx-N7-1CV" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J6V-0f-YPs"/>
@@ -20,13 +21,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Porfile" id="JaS-hU-Zvg"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vev-xV-gky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-502.5" y="757"/>
         </scene>
         <!--liveCapture-->
         <scene sceneID="2Ik-E9-hac">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJh-pH-znW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="liveCapture" id="uwT-Ak-fW3" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FTM-EM-mRu"/>
@@ -39,13 +40,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Capture" id="yMk-sm-A6f"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WJh-pH-znW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-235.5" y="-11"/>
         </scene>
         <!--Entry-->
         <scene sceneID="hrR-Yq-siX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssV-5Z-Cip" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController title="Entry" id="MIQ-tD-P0P" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qie-Pa-JcB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -58,13 +59,13 @@
                         <segue destination="Vgx-N7-1CV" kind="relationship" relationship="viewControllers" id="SWc-kZ-Hus"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ssV-5Z-Cip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1476" y="-123"/>
         </scene>
         <!--BigHall-->
         <scene sceneID="2z1-Lq-Z5c">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPi-pU-VGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="BigHall" id="q07-YN-tew" customClass="BigHallViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lRx-LZ-fb2"/>
@@ -84,7 +85,6 @@
                         <outlet property="myNavigationItem" destination="CIe-mj-00Z" id="PnD-eU-nlQ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GPi-pU-VGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-409.5" y="-692"/>
         </scene>

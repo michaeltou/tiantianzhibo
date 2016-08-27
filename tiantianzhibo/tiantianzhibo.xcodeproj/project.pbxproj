@@ -74,8 +74,6 @@
 		4C9FA2CE1D53579B00F4FB38 /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA2CD1D53579B00F4FB38 /* ChatModel.m */; };
 		4C9FA2D11D5357FE00F4FB38 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA2D01D5357FE00F4FB38 /* ChatTableViewCell.m */; };
 		4C9FA2D41D53698300F4FB38 /* BigHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA2D31D53698300F4FB38 /* BigHallViewController.m */; };
-		4C9FA2D61D536AEF00F4FB38 /* mybigimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FA2D51D536AEF00F4FB38 /* mybigimage.png */; };
-		4C9FA2EC1D58B63400F4FB38 /* iosLibs in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FA2EB1D58B63400F4FB38 /* iosLibs */; };
 		4C9FA55E1D58D05100F4FB38 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA3001D58D05000F4FB38 /* AFHTTPRequestOperation.m */; };
 		4C9FA55F1D58D05100F4FB38 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA3021D58D05000F4FB38 /* AFHTTPRequestOperationManager.m */; };
 		4C9FA5601D58D05100F4FB38 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FA3041D58D05000F4FB38 /* AFHTTPSessionManager.m */; };
@@ -313,7 +311,7 @@
 		4C370C771D6E743000792749 /* MakeOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeOrderViewController.h; sourceTree = "<group>"; };
 		4C370C781D6E743000792749 /* MakeOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeOrderViewController.m; sourceTree = "<group>"; };
 		4C370C791D6E743000792749 /* MakeOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MakeOrderViewController.xib; sourceTree = "<group>"; };
-		4C68DF4C1D4E354F0009695C /* tiantianzhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiantianzhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C68DF4C1D4E354F0009695C /* 天天直播.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "天天直播.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C68DF501D4E354F0009695C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C68DF521D4E354F0009695C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C68DF531D4E354F0009695C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -346,8 +344,6 @@
 		4C9FA2D01D5357FE00F4FB38 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
 		4C9FA2D21D53698300F4FB38 /* BigHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigHallViewController.h; sourceTree = "<group>"; };
 		4C9FA2D31D53698300F4FB38 /* BigHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigHallViewController.m; sourceTree = "<group>"; };
-		4C9FA2D51D536AEF00F4FB38 /* mybigimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mybigimage.png; path = ../../../../Desktop/mybigimage.png; sourceTree = "<group>"; };
-		4C9FA2EB1D58B63400F4FB38 /* iosLibs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iosLibs; path = /Users/michael/gitcenter/tiantianzhibo/tiantianzhibo/tiantianzhibo/iosLibs; sourceTree = "<absolute>"; };
 		4C9FA2FF1D58D05000F4FB38 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		4C9FA3001D58D05000F4FB38 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		4C9FA3011D58D05000F4FB38 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -862,7 +858,7 @@
 		4C68DF4D1D4E354F0009695C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C68DF4C1D4E354F0009695C /* tiantianzhibo.app */,
+				4C68DF4C1D4E354F0009695C /* 天天直播.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -902,7 +898,6 @@
 		4C68DF4F1D4E354F0009695C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C9FA2D51D536AEF00F4FB38 /* mybigimage.png */,
 				4C68DF501D4E354F0009695C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -1313,9 +1308,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C68DF4B1D4E354F0009695C /* tiantianzhibo */ = {
+		4C68DF4B1D4E354F0009695C /* 天天直播 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C68DF631D4E354F0009695C /* Build configuration list for PBXNativeTarget "tiantianzhibo" */;
+			buildConfigurationList = 4C68DF631D4E354F0009695C /* Build configuration list for PBXNativeTarget "天天直播" */;
 			buildPhases = (
 				75C6602880BDFF7D2D1DA651 /* [CP] Check Pods Manifest.lock */,
 				4C68DF481D4E354F0009695C /* Sources */,
@@ -1328,9 +1323,9 @@
 			);
 			dependencies = (
 			);
-			name = tiantianzhibo;
+			name = "天天直播";
 			productName = tiantianzhibo;
-			productReference = 4C68DF4C1D4E354F0009695C /* tiantianzhibo.app */;
+			productReference = 4C68DF4C1D4E354F0009695C /* 天天直播.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1360,7 +1355,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C68DF4B1D4E354F0009695C /* tiantianzhibo */,
+				4C68DF4B1D4E354F0009695C /* 天天直播 */,
 			);
 		};
 /* End PBXProject section */
@@ -1371,7 +1366,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9FAA031D5A049B00F4FB38 /* CameraViewController.xib in Resources */,
-				4C9FA2EC1D58B63400F4FB38 /* iosLibs in Resources */,
 				4C68DF5F1D4E354F0009695C /* LaunchScreen.storyboard in Resources */,
 				4C370C7B1D6E743000792749 /* MakeOrderViewController.xib in Resources */,
 				4C68DF5C1D4E354F0009695C /* Assets.xcassets in Resources */,
@@ -1380,7 +1374,6 @@
 				4C370B521D5F0D9E00792749 /* WatchSelectOfferCell.xib in Resources */,
 				4C370BBA1D60951000792749 /* LICENSE in Resources */,
 				4C9FA2C91D5355EA00F4FB38 /* ChatViewController.xib in Resources */,
-				4C9FA2D61D536AEF00F4FB38 /* mybigimage.png in Resources */,
 				4C9FAA501D5A05DD00F4FB38 /* MineHeadView.xib in Resources */,
 				4C370C731D6D20C600792749 /* MakeOrder.xib in Resources */,
 				4C370C701D6B299B00792749 /* MyCollectionViewViewController.xib in Resources */,
@@ -1727,7 +1720,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C68DF631D4E354F0009695C /* Build configuration list for PBXNativeTarget "tiantianzhibo" */ = {
+		4C68DF631D4E354F0009695C /* Build configuration list for PBXNativeTarget "天天直播" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C68DF641D4E354F0009695C /* Debug */,

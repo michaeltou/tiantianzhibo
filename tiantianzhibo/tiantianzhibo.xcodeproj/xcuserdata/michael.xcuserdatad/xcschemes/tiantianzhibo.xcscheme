@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C68DF4B1D4E354F0009695C"
-               BuildableName = "tiantianzhibo.app"
-               BlueprintName = "tiantianzhibo"
+               BuildableName = "&#x5929;&#x5929;&#x76f4;&#x64ad;.app"
+               BlueprintName = "&#x5929;&#x5929;&#x76f4;&#x64ad;"
                ReferencedContainer = "container:tiantianzhibo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C68DF4B1D4E354F0009695C"
-            BuildableName = "tiantianzhibo.app"
-            BlueprintName = "tiantianzhibo"
+            BuildableName = "&#x5929;&#x5929;&#x76f4;&#x64ad;.app"
+            BlueprintName = "&#x5929;&#x5929;&#x76f4;&#x64ad;"
             ReferencedContainer = "container:tiantianzhibo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -42,9 +42,9 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      buildConfiguration = "Release"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C68DF4B1D4E354F0009695C"
-            BuildableName = "tiantianzhibo.app"
-            BlueprintName = "tiantianzhibo"
+            BuildableName = "&#x5929;&#x5929;&#x76f4;&#x64ad;.app"
+            BlueprintName = "&#x5929;&#x5929;&#x76f4;&#x64ad;"
             ReferencedContainer = "container:tiantianzhibo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C68DF4B1D4E354F0009695C"
-            BuildableName = "tiantianzhibo.app"
-            BlueprintName = "tiantianzhibo"
+            BuildableName = "&#x5929;&#x5929;&#x76f4;&#x64ad;.app"
+            BlueprintName = "&#x5929;&#x5929;&#x76f4;&#x64ad;"
             ReferencedContainer = "container:tiantianzhibo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

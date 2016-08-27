@@ -153,7 +153,7 @@ GPUImageVideoCamera *_videoCamera;
     /** put videoView into PlayerView   **/
     [self.PlayerView insertSubview:videoView atIndex:1];
     
-    [self installMovieNotificationObservers];
+   [self installMovieNotificationObservers];
     
     /**  put PlayerView into current view  **/
     [self.view addSubview:self.PlayerView];
